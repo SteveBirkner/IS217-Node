@@ -66,5 +66,18 @@ describe("Main",function() {
 			expect(result1).to.equal(20);
 		});
 	});
+	describe("stringy()", function() {
+		it("Should return something", function() {
+			var str = main.stringy();
+
+			expect(str).not.to.be.null;
+		});
+		it("Should return a string",function() {
+			var str = main.stringy();
+
+			expect(str).to.be.a.String;
+		});
+	});
+	
 
 });
