@@ -78,6 +78,18 @@ describe("Main",function() {
 			expect(str).to.be.a.String;
 		});
 	});
-	
+	describe("arry()",function() {
+		it("should include the word 'steve'",function() { //meant to fail
+			var arr = main.arry();
+
+			expect(arr).to.contain('steve');
+		});
+		it("should include the number 2",function() {
+			var arr = main.arry();
+
+			expect(arr).to.include(2);
+		});
+	});
+
 
 });
