@@ -92,10 +92,17 @@ describe("Main",function() {
 		});
 	});
 	describe("divide()",function() {
-		it("should dived to numbers", function() {
+		it("should divide two numbers", function() {
 			var div = main.divide(20,5);
 
 			expect(div).to.equal(3); //meant to fail
+		});
+	});
+	describe("subtract()",function() {
+		it("should subtract two numbers",function() {
+			var sub = main.sub(5,4);
+
+			expect(sub).to.equal(2); //meant to fail
 		});
 	});
 
