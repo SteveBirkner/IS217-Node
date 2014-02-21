@@ -64,6 +64,7 @@ describe("Main",function() {
 			var result2 = main.multiply(3,4);
 
 			expect(result1).to.equal(20);
+
 		});
 	});
 	describe("stringy()", function() {
@@ -88,6 +89,13 @@ describe("Main",function() {
 			var arr = main.arry();
 
 			expect(arr).to.include(2);
+		});
+	});
+	describe("divide()",function() {
+		it("should dived to numbers", function() {
+			var div = main.divide(20,5);
+
+			expect(div).to.equal(3); //meant to fail
 		});
 	});
 
